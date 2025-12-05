@@ -1,0 +1,24 @@
+{
+  "name": "flash-sale-stock-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "worker": "ts-node -r tsconfig-paths/register src/queue/worker.ts"
+  },
+  "dependencies": {
+    "@nestjs/cli": "^9.5.0",
+    "@nestjs/common": "^9.4.3",
+    "@nestjs/core": "^9.4.3",
+    "@nestjs/platform-express": "^9.4.3",
+    "@prisma/client": "^5.0.0",
+    "ts-node": "^10.9.2",
+    "bullmq": "^2.0.0",
+    "rxjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "prisma": "^5.0.0",
+    "ts-node": "^10.0.0"
+  }
+}
